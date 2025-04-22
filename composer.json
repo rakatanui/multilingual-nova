@@ -7,9 +7,9 @@
     ],
     "license": "MIT",
     "require": {
-        "php": "^8.0",
-        "spatie/laravel-translatable": "^4.0",
-        "spatie/laravel-package-tools": "^1.9"
+        "php": "8.2.25",
+        "spatie/laravel-translatable": "^6.9",
+        "spatie/laravel-package-tools": "^1.92"
     },
     "autoload": {
         "psr-4": {
@@ -34,13 +34,12 @@
     "minimum-stability": "dev",
     "prefer-stable": true,
     "require-dev": {
-        "orchestra/testbench": "^6.23",
-        "pestphp/pest-plugin-faker": "^1.0",
-        "pestphp/pest-plugin-laravel": "^1.1",
-        "pestphp/pest-plugin-parallel": "^1.0",
-        "phpunit/phpunit": "^9.5.10",
-        "laravel/nova": "~3.0",
-        "laravel/framework": "^8.0"
+        "orchestra/testbench": "^v10.2",
+        "pestphp/pest-plugin-faker": "^v3.0",
+        "pestphp/pest-plugin-laravel": "^v3.2",
+        "phpunit/phpunit": "^v11.5",
+        "laravel/nova": "^5.0",
+        "laravel/framework": "^11.0"
     },
     "repositories": [
         {
