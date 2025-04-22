@@ -1,10 +1,12 @@
-let mix = require('laravel-mix')
+const mix = require('laravel-mix');
 
-mix.setPublicPath('dist')
-    .js('resources/js/field.js', 'js')
-   .sass('resources/sass/field.scss', 'css')
+mix.js('resources/js/field.js', 'dist/js')
+    .vue({ version: 3 })
+    .sass('resources/sass/field.scss', 'dist/css')
     .webpackConfig({
         resolve: {
-            symlinks: false
+            alias: {
+                'vue': 'vue/dist/vue.esm-bundler.js',
+            }
         }
-    })
+    });
